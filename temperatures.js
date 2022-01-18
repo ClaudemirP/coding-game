@@ -14,10 +14,8 @@ if( n == 0){
     console.log(0)
 } else {
     let res = inputs.sort((a,b) => a - b)
-    if(res[res.length - 1] < 0){
-        console.log(res[res.length - 1])
-    } else {
-        console.log(res.find(item => item >= 0))
-    }
+    res[res.length - 1] < 0 ? 
+    console.log(res[res.length - 1]) 
+    : console.log(res.find(item => item >= 0))
 }
 // To debug: console.error('Debug messages...');
